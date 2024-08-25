@@ -1,11 +1,11 @@
 // src/App.js
 import React from 'react';
-import ParticlesBackground from './Components/ParticlesBackground';
-
+// import ParticlesBackground from './Components/ParticlesBackground';
+import Snowflakes from './Snowflakes';
 function App() {
   return (
     <div className="min-h-screen relative overflow-hidden">
-      <ParticlesBackground />
+          <Snowflakes/>
       <header className="relative z-10 bg-transparent">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
