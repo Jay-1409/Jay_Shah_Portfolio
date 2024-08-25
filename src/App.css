@@ -1,0 +1,62 @@
+/* app.css */
+
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Buttons */
+button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #4b5563; /* Tailwind's gray-700 */
+  transform: scale(1.05);
+}
+
+/* Links */
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2563eb; /* Tailwind's indigo-600 */
+}
+
+/* app.css */
+
+/* Ensure body and canvas have appropriate styling */
+/* app.css */
+
+/* Ensure body takes up the full viewport and has a black background */
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+  background-color: black; /* Set the background color for the whole page */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Ensure canvas takes up the full viewport and is not distorted */
+canvas {
+  display: block;
+}
+
+/* Style for the particles container */
+#tsparticles {
+  position: fixed; /* Use fixed to ensure it stays in place while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* Ensure the particles container has a black background */
+  z-index: 1; /* Ensure particles are above other content */
+}
+
+
