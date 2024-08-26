@@ -5,7 +5,8 @@ import { Skills } from './Components/Skills';
 import { Projects } from './Components/Projects';
 import { Books } from './Components/Books';
 import { Contactme } from './Components/Contactme';
-
+import { Home } from './Components/Home';
+import { Profiles } from './Components/Profiles';
 // Background image URL (Change as needed)
 const backgroundImage = 'https://example.com/back.jpg';
 
@@ -26,11 +27,11 @@ function App() {
       <header className="fixed top-0 left-0 right-0 z-50">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="text-xl font-bold text-white">My Portfolio</div>
+            <div className="text-xl font-bold text-white">Jay Shah</div>
             <div className="flex space-x-4">
               <a href="#home" className="bg-teal-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-transform transform duration-300 hover:scale-105 hover:shadow-lg">Home</a>
               <a href="#skills" className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-transform transform duration-300 hover:scale-105 hover:shadow-lg">Skills</a>
-              <a href="#projects" className="bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-transform transform duration-300 hover:scale-105 hover:shadow-lg">Projects</a>
+              <a href="#Projects" className="bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-transform transform duration-300 hover:scale-105 hover:shadow-lg">Projects</a>
               <a href="#contact" className="bg-red-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-transform transform duration-300 hover:scale-105 hover:shadow-lg">Contact Me</a>
               <a href="#books" className="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-transform transform duration-300 hover:scale-105 hover:shadow-lg">Book Recommendation</a>
               <button 
@@ -45,22 +46,10 @@ function App() {
       </header>
 
       <main className="relative"> {/* Added padding-top to account for the fixed header */}
-        <section id="home" className="flex items-center justify-center h-screen bg-gradient-to-r from-gray-800 via-gray-900 to-black bg-opacity-60 hover:bg-opacity-80 transition-all duration-500"
-              style={{
-                backgroundImage: `url('/Static/Images/Back3.jpg')`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                border: "8px solid skyblue",
-                borderRadius: "15px",
-                padding: "20px",
-              }}
-              >
-          <div className="text-center text-white">
-            <h1 className="text-5xl font-bold">Welcome to My Portfolio</h1>
-            <p className="mt-4 text-lg">I am [Your Name], a [Your Profession]</p>
-          </div>
-        </section>
-
+        
+        {/* Home Section */}
+        <Home />
+                
         {/* Skills Section */}
         <Skills />
 
@@ -72,6 +61,7 @@ function App() {
 
         {/* Contact Section */}
         <Contactme />
+
       </main>
     </div>
   );
