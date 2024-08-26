@@ -4,16 +4,16 @@ const TitleBook = () => {
   return (
     <h1 className="jt --debug">
       <span className="jt__row">
-        <span className="jt__text">Book Recommendations</span>
+        <span className="jt__text">Reading Recommendations</span>
       </span>
       <span className="jt__row jt__row--sibling" aria-hidden="true">
-        <span className="jt__text">Book Recommendations</span>
+        <span className="jt__text">Reading Recommendations</span>
       </span>
       <span className="jt__row jt__row--sibling" aria-hidden="true">
-        <span className="jt__text">Book Recommendations</span>
+        <span className="jt__text">Reading Recommendations</span>
       </span>
       <span className="jt__row jt__row--sibling" aria-hidden="true">
-        <span className="jt__text">Book Recommendations</span>
+        <span className="jt__text">Reading Recommendations</span>
       </span>
     </h1>
   );

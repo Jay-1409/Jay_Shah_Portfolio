@@ -1,6 +1,7 @@
 import React from 'react';
 import './TitleBook.js';
 import TitleBook from './TitleBook.js';
+
 export const Books = () => {
   return (
     <section
@@ -10,7 +11,7 @@ export const Books = () => {
         backgroundImage: `url('/Static/Images/Back1.jpg')`, 
         backgroundSize: 'cover', 
         backgroundPosition: 'center',
-        border: '8px solid black', 
+        border: '8px solid blue', 
         borderRadius: '15px', 
         padding: '20px' 
       }}
