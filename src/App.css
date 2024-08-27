@@ -48,7 +48,7 @@ canvas {
 
 .snowflake {
   --size: 1vw;
-  background: url('D:/Desktop/Web Dev/portfoliofinal/my-portfolio/public/Static/Images/SnowFlake.png') no-repeat center center;
+  background: url('https://github.com/Jay-1409/Jay_Shah_Portfolio/blob/main/public/Static/Images/SnowFlake.png?raw=true') no-repeat center center;
   width: calc(4*var(--size));
   height: calc(4*var(--size));
   background-size: cover; /* Use 'cover' if you want to cover the entire area */
@@ -619,7 +619,7 @@ html {
 
 .flowerfall {
   --size: 1vw;
-  background: url('D:/Desktop/Web Dev/portfoliofinal/my-portfolio/public/Static/Images/FlowerFall.png') no-repeat center center;
+  background: url('https://github.com/Jay-1409/Jay_Shah_Portfolio/blob/main/public/Static/Images/FlowerFall.png?raw=true') no-repeat center center;
   width: calc(4*var(--size));
   height: calc(4*var(--size));
   background-size: cover; /* Use 'cover' if you want to cover the entire area */
