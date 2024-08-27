@@ -3,13 +3,6 @@ import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { Profiles } from './Profiles';
 
-const codeforcesIcon = '/Static/Images/Codeforces.jpeg';
-const leetcodeIcon = '/Static/Images/Leetcode.jpeg';
-const codechefIcon = '/Static/Images/CodeChef.jpg';
-const linkedinIcon = '/Static/Images/Linkedin.jpeg';
-const discordIcon = '/Static/Images/Discord.jpeg';
-const telegramIcon = '/Static/Images/Telegram.jpeg';
-
 export const Home = () => {
   return (
     <section id="home" className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-gray-800 via-gray-900 to-black bg-opacity-60 hover:bg-opacity-80 transition-all duration-500"
@@ -44,15 +37,24 @@ export const Home = () => {
         </div>
       </motion.div>
 
-      {/* New Section with Rolling Text */}
-      <div className="glass-panel main mt-10">
-        <h1>I am Jay, a: <div className="roller">
-          <span id="rolltext">React Developer<br />
-          Competitive Programmer<br />
-          Web Developer<br />
-          <span id="spare-time">too much spare time?</span><br />
-          </span>
-        </div></h1>
+      {/* New Section with Image and Description Boxes */}
+      <div className="flex mt-10 space-x-8">
+        {/* Image Box */}
+        <div className="w-1/2 p-4 border-2 border-skyblue rounded-lg bg-white bg-opacity-10">
+          <img 
+            src="/Static/Images/YourImage.jpg" 
+            alt="Your Image Description" 
+            className="rounded-lg shadow-lg w-full h-auto"
+          />
+        </div>
+
+        {/* Description Box */}
+        <div className="w-1/2 p-4 border-2 border-skyblue rounded-lg bg-white bg-opacity-10 text-white">
+          <h2 className="text-3xl font-bold mb-4">About Me</h2>
+          <p className="text-lg">
+            I am Jay, a passionate developer with experience in building web applications using React, JavaScript, and more. I love solving complex problems and am constantly learning new technologies to improve my skills. When I'm not coding, I enjoy participating in competitive programming and exploring the latest trends in tech.
+          </p>
+        </div>
       </div>
 
       <Profiles />

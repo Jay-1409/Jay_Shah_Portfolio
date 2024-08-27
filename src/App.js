@@ -29,7 +29,7 @@ function App() {
           <div className="flex justify-between items-center h-16">
             <div className="text-xl font-bold text-white">Jay Shah</div>
             <div className="flex space-x-4">
-              <a href="#home" className="bg-teal-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-transform transform duration-300 hover:scale-105 hover:shadow-lg">Home</a>
+              <a href="/home" className="bg-teal-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-transform transform duration-300 hover:scale-105 hover:shadow-lg">Home</a>
               <a href="#skills" className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-transform transform duration-300 hover:scale-105 hover:shadow-lg">Skills</a>
               <a href="#Projects" className="bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-transform transform duration-300 hover:scale-105 hover:shadow-lg">Projects</a>
               <a href="#contact" className="bg-red-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white transition-transform transform duration-300 hover:scale-105 hover:shadow-lg">Contact Me</a>
