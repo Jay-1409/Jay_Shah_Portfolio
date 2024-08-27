@@ -2,12 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { Profiles } from './Profiles';
+
 const codeforcesIcon = '/Static/Images/Codeforces.jpeg';
 const leetcodeIcon = '/Static/Images/Leetcode.jpeg';
 const codechefIcon = '/Static/Images/CodeChef.jpg';
 const linkedinIcon = '/Static/Images/Linkedin.jpeg';
 const discordIcon = '/Static/Images/Discord.jpeg';
 const telegramIcon = '/Static/Images/Telegram.jpeg';
+
 export const Home = () => {
   return (
     <section id="home" className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-gray-800 via-gray-900 to-black bg-opacity-60 hover:bg-opacity-80 transition-all duration-500"
@@ -27,7 +29,7 @@ export const Home = () => {
         transition={{ duration: 1 }}
       >
         <h1 className="text-5xl font-bold">Welcome to My Portfolio</h1>
-        <p className="mt-4 text-lg">I am [Your Name], a [Your Profession]</p>
+        <p className="mt-4 text-lg">I am Jay, a [Your Profession]</p>
         <div className="mt-6">
           <button className="bg-skyblue text-black px-4 py-2 rounded-md mr-4">View My Work</button>
           <button className="bg-skyblue text-black px-4 py-2 rounded-md">Contact Me</button>
@@ -41,6 +43,18 @@ export const Home = () => {
           </a>
         </div>
       </motion.div>
+
+      {/* New Section with Rolling Text */}
+      <div className="glass-panel main mt-10">
+        <h1>I am Jay, a: <div className="roller">
+          <span id="rolltext">React Developer<br />
+          Competitive Programmer<br />
+          Web Developer<br />
+          <span id="spare-time">too much spare time?</span><br />
+          </span>
+        </div></h1>
+      </div>
+
       <Profiles />
     </section>
   )

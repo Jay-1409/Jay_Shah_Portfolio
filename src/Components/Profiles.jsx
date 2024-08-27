@@ -1,34 +1,35 @@
 import React from 'react';
+import { Home } from './Home';
 
 // Image paths
-const codeforcesIcon = '/Static/Images/Codeforces.jpeg';
-const leetcodeIcon = '/Static/Images/Leetcode.jpeg';
-const codechefIcon = '/Static/Images/CodeChef.jpg';
-const linkedinIcon = '/Static/Images/Linkedin.jpeg';
-const discordIcon = '/Static/Images/Discord.jpeg';
-const telegramIcon = '/Static/Images/Telegram.jpeg';
+const codeforcesIcon = '/Static/Icons/codefrces-removebg-preview.png';
+const leetcodeIcon = '/Static/Icons/Leetcode-removebg-preview.png';
+const codechefIcon = '/Static/Icons/CodeChef-removebg-preview (2).png';
+const linkedinIcon = '/Static/Icons/Linkedin-removebg-preview.png';
+const discordIcon = '/Static/Icons/Discord-removebg-preview.png';
+const telegramIcon = '/Static/Icons/Telegram-removebg-preview.png';
 
 export const Profiles = () => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 p-4">
-      <div className="flex justify-around items-center w-full bg-gray-800 bg-opacity-50 p-4 border border-gray-600 rounded-lg shadow-lg backdrop-filter backdrop-blur-lg">
-        <a href="https://codeforces.com" target="_blank" rel="noopener noreferrer" className="mx-2">
-          <img src={codeforcesIcon} alt="CodeForces" className="w-auto h-12 hover:opacity-80 transition-opacity duration-300" />
+    <div className="fixed bottom-0 left-0 right-0 p-4 z-index auto">
+      <div className="flex justify-around items-center w-full h-9 bg-gray-800 bg-opacity-50 p-4 border border-gray-600 rounded-lg shadow-lg backdrop-filter backdrop-blur-lg">
+        <a href="https://codeforces.com/profile/24x7coldd" target="_blank" rel="noopener noreferrer" className="mx-2">
+          <img src={codeforcesIcon} alt="CodeForces" className="w-auto h-9 hover:opacity-80 transition-opacity duration-300" />
         </a>
-        <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" className="mx-2">
-          <img src={leetcodeIcon} alt="LeetCode" className="w-auto h-12 hover:opacity-80 transition-opacity duration-300" />
+        <a href="https://leetcode.com/u/mR_Jy/" target="_blank" rel="noopener noreferrer" className="mx-2">
+          <img src={leetcodeIcon} alt="LeetCode" className="w-auto h-9 hover:opacity-80 transition-opacity duration-300" />
         </a>
-        <a href="https://www.codechef.com" target="_blank" rel="noopener noreferrer" className="mx-2">
-          <img src={codechefIcon} alt="CodeChef" className="w-auto h-12 hover:opacity-80 transition-opacity duration-300" />
+        <a href="https://www.codechef.com/users/bestcchef" target="_blank" rel="noopener noreferrer" className="mx-2">
+          <img src={codechefIcon} alt="CodeChef" className="w-auto h-9 hover:opacity-80 transition-opacity duration-300" />
         </a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="mx-2">
-          <img src={linkedinIcon} alt="LinkedIn" className="w-auto h-12 hover:opacity-80 transition-opacity duration-300" />
+        <a href="https://www.linkedin.com/in/jay-shah-8970b5284/" target="_blank" rel="noopener noreferrer" className="mx-2">
+          <img src={linkedinIcon} alt="LinkedIn" className="w-auto h-9 hover:opacity-80 transition-opacity duration-300" />
         </a>
         <a href="https://discord.com" target="_blank" rel="noopener noreferrer" className="mx-2">
-          <img src={discordIcon} alt="Discord" className="w-auto h-12 hover:opacity-80 transition-opacity duration-300" />
+          <img src={discordIcon} alt="Discord" className="w-auto h-9 hover:opacity-80 transition-opacity duration-300" />
         </a>
-        <a href="https://t.me" target="_blank" rel="noopener noreferrer" className="mx-2">
-          <img src={telegramIcon} alt="Telegram" className="w-auto h-12 hover:opacity-80 transition-opacity duration-300" />
+        <a href="https://t.me/hahah_96" target="_blank" rel="noopener noreferrer" className="mx-2">
+          <img src={telegramIcon} alt="Telegram" className="w-auto h-9 hover:opacity-80 transition-opacity duration-300" />
         </a>
       </div>
     </div>

@@ -42,6 +42,7 @@ export const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-white text-left">Projects</h2>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
           <div className="project-box">
             <img
               src="/Static/Images/Gta5Chat.png"
@@ -127,6 +128,48 @@ export const Projects = () => {
               <li>MatPlotLib</li>
             </ul>
           </div>
+
+          <div className="project-box">
+            <img
+              src="/Static/Images/CommingSoon.jpeg"
+              alt="GTA-5 CHAT"
+              className="w-full h-64 object-cover rounded-md mb-4"
+            />
+            <h3 className="text-xl font-semibold text-white">Portfolio</h3>
+            <p className="mt-2 text-gray-400">
+              This website tell you more about me.
+            </p>
+            <div className="mt-4">
+              <a
+                href="https://gta5chat-1.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-400 hover:text-indigo-600"
+              >
+                Live Demo
+              </a>{" "}
+              |{" "}
+              <a
+                href="https://github.com/Jay-1409/Jay_Shah_Portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-400 hover:text-indigo-600 ml-2"
+              >
+                Source Code
+              </a>
+            </div>
+            <h3 className="text-lg font-semibold text-white mt-4">
+              Technologies Used:
+            </h3>
+            <ul className="list-disc list-inside text-gray-400 mt-2">
+              <li>HTML</li>
+              <li>React</li>
+              <li>Gemini Generative AI API</li>
+              <li>CSS (Vanilla + TailWind)</li>
+              <li>Google Generative AI</li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </section>
