@@ -31,7 +31,7 @@ function App() {
       <header className="fixed top-0 left-0 right-0 z-50">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className={`text-xl font-bold ${minimalisticMode ? 'text-black' : 'text-white'}`}>Jay Shah</div>
+            <div className={`text-xl font-bold ${minimalisticMode ? 'text-black' : 'text-white'}`}></div>
             <div className="flex space-x-4">
               <a
                 href="/home"
@@ -73,22 +73,22 @@ function App() {
               >
                 Book Recommendation
               </a>
-              <button
+              {/* <button
                 onClick={toggleAnimation}
                 className={`${
                   minimalisticMode ? 'bg-white text-black' : 'bg-yellow-500 text-white'
                 } px-4 py-2 ml-4 rounded-full text-sm font-medium hover:bg-yellow-500 transition-transform transform duration-300 hover:scale-105 hover:shadow-lg`}
               >
                 Toggle Snow/Flower
-              </button>
-              <button
+              </button> */}
+              {/* <button
                 onClick={toggleMinimalisticMode}
                 className={`${
                   minimalisticMode ? 'bg-white text-black' : 'bg-gray-800 text-white'
                 } px-4 py-2 ml-4 rounded-full text-sm font-medium hover:bg-yellow-500 transition-transform transform duration-300 hover:scale-105 hover:shadow-lg`}
               >
                 Toggle Minimalistic Mode
-              </button>
+              </button> */}
             </div>
           </div>
         </nav>

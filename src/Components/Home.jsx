@@ -15,6 +15,17 @@ export const Home = ({ minimalisticMode }) => {
         borderRadius: minimalisticMode ? '0' : "15px",
       }}
     >
+            <div className="absolute top-0 left-0 rounded-lg shadow-lg w-24 h-auto object-cover">
+            <img
+              src="/Static/Images/Photo.jpeg"
+              alt="Your Image Description"
+              className="top-0 rounded-lg shadow-lg w-full h-auto object-cover"
+              style={{
+                transform: 'rotate(0deg)', // Ensures the image does not rotate
+              }}
+            />
+          </div>
+
       <motion.div
         className={`text-center ${minimalisticMode ? 'text-black' : 'text-white'}`}
         initial={{ opacity: 0, y: -50 }}
@@ -27,7 +38,7 @@ export const Home = ({ minimalisticMode }) => {
       <div className="flex mt-10 space-x-6 justify-center">
         {/* Image Box with Border Tilt and Rotation */}
         <motion.div
-          className={`w-1/3 p-3 border-2 ${minimalisticMode ? 'border-black' : 'border-skyblue'} rounded-3xl ${minimalisticMode ? 'bg-gray-200' : 'bg-white bg-opacity-10'} overflow-hidden`}
+          className={`w-1/2 p-3 border-2 ${minimalisticMode ? 'border-black' : 'border-skyblue'} rounded-3xl ${minimalisticMode ? 'bg-gray-200' : 'bg-white bg-opacity-10'} overflow-hidden`}
           style={{
             backgroundColor: minimalisticMode ? '#f0f0f0' : "#000000a5",
             boxShadow: minimalisticMode ? 'none' : "0px 0px 20px 20px #000000a5",
@@ -35,21 +46,12 @@ export const Home = ({ minimalisticMode }) => {
           animate={{ rotate: minimalisticMode ? 0 : [0, 2, -2, 0] }}
           transition={{ duration: 10, repeat: Infinity }}
         >
-          <div className="relative">
-            <img
-              src="/Static/Images/Photo.jpeg"
-              alt="Your Image Description"
-              className="rounded-lg shadow-lg w-full h-auto object-cover"
-              style={{
-                transform: 'rotate(0deg)', // Ensures the image does not rotate
-              }}
-            />
-          </div>
+          <p className='text-black text-2xl font-bold mb-3'>Recents</p>
         </motion.div>
 
         {/* Description Box */}
         <motion.div
-          className={`w-1/3 p-3 border-2 ${minimalisticMode ? 'border-black' : 'border-skyblue'} rounded-3xl ${minimalisticMode ? 'bg-gray-200 text-black' : 'bg-white bg-opacity-10 text-white'}`}
+          className={`w-1/2 p-3 border-2 ${minimalisticMode ? 'border-black' : 'border-skyblue'} rounded-3xl ${minimalisticMode ? 'bg-gray-200 text-black' : 'bg-white bg-opacity-10 text-white'}`}
           style={{
             backgroundColor: minimalisticMode ? '#f0f0f0' : "#000000a5",
             boxShadow: minimalisticMode ? 'none' : "0px 0px 20px 20px #000000a5",
