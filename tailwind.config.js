@@ -1,23 +1,23 @@
-// tailwind.config.js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    fontFamily: {
+      sans: ['var(--font-inter)', 'sans-serif'],
+    },
     extend: {
-      keyframes: {
-        marquee: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-100%)' },
-        },
-        marquee2: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(0%)' },
-        },
+      backgroundImage: {
+        'hero-image': "url('/images/hero-bg.png')",
       },
-      animation: {
-        'marquee-infinite': 'marquee 25s linear infinite',
+      fontFamily: {
+        mono: ['var(--font-plex-mono)', 'monospace'],
+      },
+      boxShadow: {
+        button: '0px 0px 68px 7px rgba(5, 150, 105, 0.4)',
       },
     },
   },

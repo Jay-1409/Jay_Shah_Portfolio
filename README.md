@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# Portfolio Craft
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Introduction](#introduction)
+- [Deployed Website](#deployed-website)
+- [Screenshots](#screenshots)
+  - [UI/UX](#uiux)
+  - [Hygraph-Schema](#hygraph-schema)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+  - [Prerequisites](#prerequisites)
+  - [Steps](#steps)
+- [Contributions](#contributions)
+- [License](#license)
 
-In the project directory, you can run:
+## Introduction
 
-### `npm start`
+Welcome to the GitHub repository of Portfolio Craft, a dynamic and responsive personal portfolio website designed to showcase skills, projects, and experiences in a professional and engaging manner. This portfolio website is perfect for developers, designers, and professionals looking to establish a strong online presence.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deployed Website
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Experience the live version of Portfolio Craft at [https://gauravgovinda.vercel.app/](https://gauravgovinda.vercel.app/).
 
-### `npm test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### UI/UX
+#### Home
+![Home](visuals/ss/Home.png)
+#### Skills
+![Skills](visuals/ss/Skills.png)
+#### Featured Projects
+![Featured Projects](visuals/ss/Featured_Projects.png)
+#### Experiences
+![Experiences](visuals/ss/Experiences.png)
+#### Contact
+![Contact](visuals/ss/Contact.png)
+#### My Projects
+![My Projects](visuals/ss/My_Projects.png)
 
-### `npm run build`
+### Hygraph-Schema
+#### Page Schema
+![Page](visuals/schema/Page.png)
+#### Project Schema
+![Project](visuals/schema/Project.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Portfolio Craft comes packed with a variety of features designed to make your online portfolio stand out:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Dynamic Content Management**: Thanks to HygraphCMS, updating your portfolio is seamless and straightforward. Change your project showcase, skills, and experiences without touching a line of code.
+2. **Discord Webhook Integration**: Get instantly notified when someone contacts you through your portfolio. This feature ensures you never miss out on potential opportunities or collaborations.
+3. **Responsive Design**: Built with mobile-first principles in mind, ensuring that your portfolio looks great on devices of all sizes—from smartphones to desktops.
+4. **Smooth Animations**: Utilizing Framer-Motion, the website offers smooth and engaging animations that enhance the user experience without compromising on performance.
+5. **SEO Optimized**: Carefully crafted to be SEO-friendly, helping your portfolio rank higher in search results and making it easier for potential employers or clients to find you.
 
-### `npm run eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Portfolio Craft is built using a range of modern technologies to ensure high performance, responsiveness, and an engaging user experience:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Next.js
+- TypeScript
+- Bootstrap
+- TailwindCSS
+- Framer-Motion
+- Hygraph
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To set up your instance of Portfolio Craft, follow these steps:
 
-## Learn More
+### Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Node.js (preferably the latest stable version)
+- npm package manager (you can use yarn, but this guide assumes you're using npm)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Steps
 
-### Code Splitting
+1. **Clone the repository**
+```
+git clone https://github.com/Gaurav241/portfolio-craft.git
+cd portfolio-craft
+```
+2. **Install dependencies**
+```
+npm install
+```
+3. **Set up environment variables**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Rename `.env.example` to `.env` and fill in the variables:
 
-### Analyzing the Bundle Size
+- `HYGRAPH_URL`: The endpoint URL of your Hygraph project.
+- `HYGRAPH_TOKEN`: The access token for your Hygraph project.
+- `WEBHOOK_URL`: The Discord webhook URL for contact notifications.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Your `.env` file should look something like this:
+```
+Hygraph
+HYGRAPH_URL="https://your-hygraph-project-url"
+HYGRAPH_TOKEN="your-hygraph-access-token"
 
-### Making a Progressive Web App
+Discord
+WEBHOOK_URL="your-discord-webhook-url"
+```
+4. **Hygraph Project and Discord Webhook Setup**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- For your portfolio to properly fetch content, you need to clone the schema and content model from the provided Hygraph project clone. Follow the instructions on [Clone my Hygraph Project](https://app.hygraph.com/clone/dc8fc00574e94c3b83b6c44845d4babe?name=Portfolio-craft-tutorial) to import the schema into your project. This ensures your portfolio can communicate with Hygraph to retrieve your dynamic content.
 
-### Advanced Configuration
+- To set up the Discord webhook for contact notifications, go to your Discord server settings, select 'Integrations', click on 'New Webhook', and choose the channel you want the notifications to go to. Once created, copy the webhook URL and paste it into your `.env` file under `WEBHOOK_URL`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5. **Run the development server**
+```
+npm run dev
+```
+This command runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser. The page will automatically reload if you make edits.
 
-### Deployment
+6. **Build and run for production**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+When you're ready to deploy your portfolio:
+```
+npm run build
+npm run start
+```
+## Contributions
 
-### `npm run build` fails to minify
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+Distributed under the MIT License. See [LICENSE](LICENSE.txt) for more information.
